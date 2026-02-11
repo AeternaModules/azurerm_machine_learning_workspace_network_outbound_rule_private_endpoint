@@ -15,7 +15,7 @@ EOT
     service_resource_id = string
     sub_resource_target = string
     workspace_id        = string
-    spark_enabled       = optional(bool, false)
+    spark_enabled       = optional(bool) # Default: false
   }))
 }
 
