@@ -1,3 +1,7 @@
+output "machine_learning_workspace_network_outbound_rule_private_endpoints_id" {
+  description = "Map of id values across all machine_learning_workspace_network_outbound_rule_private_endpoints, keyed the same as var.machine_learning_workspace_network_outbound_rule_private_endpoints"
+  value       = { for k, v in azurerm_machine_learning_workspace_network_outbound_rule_private_endpoint.machine_learning_workspace_network_outbound_rule_private_endpoints : k => v.id }
+}
 output "machine_learning_workspace_network_outbound_rule_private_endpoints_name" {
   description = "Map of name values across all machine_learning_workspace_network_outbound_rule_private_endpoints, keyed the same as var.machine_learning_workspace_network_outbound_rule_private_endpoints"
   value       = { for k, v in azurerm_machine_learning_workspace_network_outbound_rule_private_endpoint.machine_learning_workspace_network_outbound_rule_private_endpoints : k => v.name }
